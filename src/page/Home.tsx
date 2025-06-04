@@ -10,10 +10,16 @@ const Home = (props: Props) => {
       <img
         src={portfolioImg}
         alt="Portfolio"
-        style={{ width: "100%", marginBottom: "1rem", borderRadius: "8px" }}
+        style={{
+          width: "100%",
+          marginBottom: "1rem",
+          borderRadius: "8px",
+          height: "80%",
+        }}
       />
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is the home page of my portfolio website.</p>
+      <h1 className="text-5xl font-bold mb-4 text-center">
+        Welcome to My Portfolio
+      </h1>
       <Introduction />
     </div>
   );

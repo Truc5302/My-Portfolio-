@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 ## Deployment
 
 The project is deployed on Vercel:  
-👉 [https://my-portfolio-git-develop-truc5302s-projects.vercel.app/](https://my-portfolio-git-develop-truc5302s-projects.vercel.app/)
+👉 [https://portfolio-git-develop-truc5302s-projects.vercel.app/](https://portfolio-git-develop-truc5302s-projects.vercel.app/)
 
 ## Expanding the ESLint configuration
 
