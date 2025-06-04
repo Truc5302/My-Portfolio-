@@ -1,25 +1,26 @@
 import React from "react";
 import portfolioImg from "../assets/portfolio.png";
-import Introduction from "../components/Introduction";
+import Introduction from "../components/introduction/Introduction";
+import Header from "../components/common/header/Header";
 
 type Props = {};
 
 const Home = (props: Props) => {
   return (
     <div>
+      <Header />
       <img
         src={portfolioImg}
         alt="Portfolio"
         style={{
-          width: "100%",
+          width: "80%",
           marginBottom: "1rem",
           borderRadius: "8px",
           height: "80%",
+          marginLeft: "10%",
+          marginRight: "10%",
         }}
       />
-      <h1 className="text-5xl font-bold mb-4 text-center">
-        Welcome to My Portfolio
-      </h1>
       <Introduction />
     </div>
   );
