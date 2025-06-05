@@ -78,7 +78,7 @@ const SkillsHobbies = (props: Props) => {
             </div>
             <div className='bg-[#fdf8f8] rounded-2xl p-2'>
                 <h2 className='text-center underline text-3xl'>Experience</h2>
-                <div className="relative border border-gray-300 p-4 rounded-2xl font-mono mb-4 shadow-sm bg-white mt-5">
+                <div className="relative border border-gray-300 p-4 rounded-2xl font-mono mb-4 shadow-sm bg-white mt-10">
                     <h3 className='absolute -rotate-12 -top-4 -left-1 font-bold p-1 bg-[#000] text-[#fff] rounded-lg'>Work Experience</h3>
                     <h3 className="text-lg font-semibold mb-2 mt-2 text-gray-800 flex"><img src={imgFPTSoftware} alt="fptsoftware" className='w-16 mr-1' /> FPT Software</h3>
                     <ul className="space-y-1 text-sm text-gray-700">
@@ -101,13 +101,21 @@ const SkillsHobbies = (props: Props) => {
             </div>
             <div className='border-t-4 border-b-4 border-[#b97979] rounded-2xl p-2 flex flex-col items-center'>
                 <h2 className='text-center underline text-3xl'>Hobbies</h2>
-                <ul className="space-y-1 text-gray-700 w-fit px-20 py-10 text-2xl border border-gray-300 rounded-2xl mt-5 ">
+                <ul className="w-fit space-y-1 text-gray-700 py-5 px-10 text-lg border border-black rounded-xl mt-2 ">
                     <li>🏸 Badminton</li>
                     <li>🏓 Tabble tennis</li>
                     <li>🎹 Play Piano</li>
                     <li>📖 Read Book</li>
                     <li>🎞 Watch film</li>
                 </ul>
+
+                <div>
+                    <h2 className='text-center underline text-3xl mt-2'>Languages</h2>
+                    <div className='w-full space-y-1 text-gray-700 p-5 text-lg border border-black rounded-xl mt-2 '>
+                        <p>Vietnamese: Native</p>
+                        <p>English: B1 level</p>
+                    </div>
+                </div>
 
             </div>
         </div >
