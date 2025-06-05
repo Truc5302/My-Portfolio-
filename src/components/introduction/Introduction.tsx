@@ -43,35 +43,35 @@ const Introduction = (props: Props) => {
       route: "https://www.facebook.com/truong.thuy.truc.2024",
       textColor: "text-blue-600",
       icon: faFacebook,
-      tooltip:"Facebook",
+      tooltip: "Facebook",
     },
     {
       route: "https://www.instagram.com/trucie_5302/",
       textColor: "text-pink-600",
       icon: faSquareInstagram,
-      tooltip:"Instagram",
+      tooltip: "Instagram",
     },
     {
       route: "https://www.linkedin.com/in/truongthuytruc/",
       textColor: "text-blue-700",
       icon: faLinkedin,
-      tooltip:"Linkedin",
+      tooltip: "Linkedin",
     },
     {
       route: "https://www.threads.com/@trucie_5302",
       textColor: "",
       icon: faSquareThreads,
-      tooltip:"Threads",
+      tooltip: "Threads",
     },
 
 
-    
+
   ]
 
-  const scrollToContact= () => {
-const contact= document.getElementById("about-me-contact");
-    if(contact){
-      contact.scrollIntoView({behavior: "smooth"})
+  const scrollToContact = () => {
+    const contact = document.getElementById("about-me-contact");
+    if (contact) {
+      contact.scrollIntoView({ behavior: "smooth" })
     }
   }
 
@@ -88,7 +88,7 @@ const contact= document.getElementById("about-me-contact");
           or opportunities for collaboration.
         </p>
         <div className="flex gap-4 mt-4 justify-center">
-          <button onClick={() => {navigate("/projects")}} className="px-5 py-2 bg-[#b97979] rounded-lg text-[#fff] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+          <button onClick={() => { navigate("/projects") }} className="px-5 py-2 bg-[#b97979] rounded-lg text-[#fff] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
             View projects
           </button>
           <button onClick={() => scrollToContact()} className="px-5 py-2 rounded-lg border-2 border-[#b97979] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
@@ -142,7 +142,7 @@ const contact= document.getElementById("about-me-contact");
               </ul>
             </div>
             <div className="flex gap-4 mt-4">
-              {socialsMed.map((item) => ( 
+              {socialsMed.map((item) => (
                 <Tooltip key={item?.route} title={item.tooltip} arrow={mergedArrow}>
                   <a
                     href={item.route}
@@ -153,7 +153,7 @@ const contact= document.getElementById("about-me-contact");
                   </a>
                 </Tooltip>
               ))}
-              
+
             </div>
           </div>
           <div className="mb-10 flex items-center justify-center">
