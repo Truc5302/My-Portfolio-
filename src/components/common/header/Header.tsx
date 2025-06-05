@@ -9,7 +9,7 @@ const Header = (props: Props) => {
 const currentPath = location.pathname;
 
   return (
-    <div className="w-full h-16 flex items-center justify-between px-8">
+    <div className="w-full h-16 flex items-center justify-between px-8 fixed top-0 bg-white shadow-md z-100">
       <div className="text-center text-gray-700 font-bold">
         <h1
           className="text-3xl text-[#b97979] h-[100%] tracking-tightest hover:cursor-pointer"

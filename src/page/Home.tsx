@@ -7,7 +7,7 @@ type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div>
+    <div className="pt-16">
       <img
         src={portfolioImg}
         alt="Portfolio"
