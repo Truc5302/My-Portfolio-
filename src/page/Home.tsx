@@ -8,7 +8,6 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <div>
-      <Header />
       <img
         src={portfolioImg}
         alt="Portfolio"

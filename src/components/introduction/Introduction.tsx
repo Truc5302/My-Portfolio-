@@ -29,8 +29,16 @@ const Introduction = (props: Props) => {
           Feel free to explore my work and reach out if you have any questions
           or opportunities for collaboration.
         </p>
+        <div className="flex gap-4 mt-4 justify-center">
+          <button className="px-5 py-2 bg-[#b97979] rounded-lg text-[#fff] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+            View project
+          </button>
+          <button className="px-5 py-2 rounded-lg border-2 border-[#b97979] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+            Contact me
+          </button>
+        </div>
       </div>
-      <div className="bg-[#FFF6F6]">
+      <div className="bg-[#FFF6F6] px-10">
         <h2 className="text-center text-3xl font-bold pt-4">About me</h2>
 
         <div className="p-10 grid-cols-2 grid gap-4 items-center">
@@ -50,7 +58,7 @@ const Introduction = (props: Props) => {
               studies.
             </p>
             <div className="mt-4">
-              <strong>My Personal information:</strong>
+              <strong className="text-2xl">My Personal informations:</strong>
               <ul className="list-disc ml-2 list-none">
                 <li>
                   <FontAwesomeIcon icon={faCircleUser} className="mr-2 w-4" />
@@ -66,7 +74,7 @@ const Introduction = (props: Props) => {
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faMobileScreen} className="mr-2 w-4" />
-                  <strong>Phone number:</strong> (+84) 0377373426
+                  <strong>Phone number:</strong> (+84) 037 7373 426
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faLocationDot} className="mr-2 w-4" />
@@ -100,7 +108,11 @@ const Introduction = (props: Props) => {
             </div>
           </div>
           <div className="mb-10">
-            <img src={imgIntro} alt="image personal" />
+            <img
+              src={imgIntro}
+              alt="image personal"
+              className=" h-96 float-right"
+            />
           </div>
         </div>
       </div>
