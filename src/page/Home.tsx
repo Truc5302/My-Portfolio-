@@ -1,7 +1,8 @@
 import React from "react";
 import portfolioImg from "../assets/portfolio.png";
 import Introduction from "../components/introduction/Introduction";
-import Header from "../components/common/header/Header";
+import Header from "../components/common/layouts/header/Header";
+import MyEducation from "../components/education/MyEducation";
 
 type Props = {};
 
@@ -21,6 +22,7 @@ const Home = (props: Props) => {
         }}
       />
       <Introduction />
+      <MyEducation/>
     </div>
   );
 };

@@ -96,19 +96,19 @@ const contact= document.getElementById("about-me-contact");
           </button>
         </div>
       </div>
-      <div id="about-me-contact" className="bg-[#FFF6F6] px-10" >
-        <h2 className="text-center text-3xl font-bold pt-4">About me</h2>
+      <div id="about-me-contact" className="bg-[#FFF6F6] px-10 " >
+        <h2 className="text-center text-3xl font-bold pt-4 underline underline-[#b97979]">About me </h2>
 
         <div className="p-10 grid-cols-2 grid gap-4 items-center">
           <div>
             {" "}
             <h2
-              className="text-3xl font-bold"
+              className="text-3xl font-bold text-center"
               style={{ fontFamily: "Pacifico" }}
             >
               Hello, I'm Truc{" "}
             </h2>
-            <p style={{ fontFamily: "Concert One" }}>
+            <p style={{ fontFamily: "Concert One" }} className="text-center">
               I am a fresher front-end developer. I recently graduated in
               Software Engineering from FPT University. I have six months of
               internship experience working with Angular at FPT Software and
@@ -116,7 +116,7 @@ const contact= document.getElementById("about-me-contact");
               studies.
             </p>
             <div className="mt-4">
-              <strong className="text-2xl">My Personal informations:</strong>
+              <strong className="text-2xl text-center ">My Personal informations:</strong>
               <ul className="list-disc ml-2 list-none">
                 <li>
                   <FontAwesomeIcon icon={faCircleUser} className="mr-2 w-4 text-[#b97979]" />
@@ -156,11 +156,11 @@ const contact= document.getElementById("about-me-contact");
               
             </div>
           </div>
-          <div className="mb-10">
+          <div className="mb-10 flex items-center justify-center">
             <img
               src={imgIntro}
               alt="image personal"
-              className=" h-96 float-right"
+              className=" h-96 "
             />
           </div>
         </div>
