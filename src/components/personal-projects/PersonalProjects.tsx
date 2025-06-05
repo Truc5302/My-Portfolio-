@@ -35,7 +35,7 @@ const PersonalProjects = (props: Props) => {
       <div className="w-2/3 mb-6 py-4 px-10 bg-white rounded-md shadow-sm border-l-10 border-[#b97979] flex justify-between items-center gap-4">
         <div>
           <h3 className="text-lg font-semibold text-gray-800">
-            <FontAwesomeIcon icon={faCloud} /> FPT Evaluation Project (Team Project - 2023)
+            <FontAwesomeIcon icon={faCloud} /> My Portfolio (Personal project - 2025)
           </h3>
           <p className="text-sm text-gray-600 mb-1">Technology: <span className="font-medium">React, TypeScript, v.v</span></p>
           <p className="text-sm text-gray-600">Web: <a href="https://portfolio-ttt5302.vercel.app/" target="_blank" className="text-blue-600 hover:underline">portfolio-ttt5302.vercel.app/</a></p>
