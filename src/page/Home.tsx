@@ -3,6 +3,7 @@ import portfolioImg from "../assets/portfolio.png";
 import Introduction from "../components/introduction/Introduction";
 import Header from "../components/common/layouts/header/Header";
 import MyEducation from "../components/education/MyEducation";
+import SkillsHobbies from "../components/skills-hobbies/SkillsHobbies";
 
 type Props = {};
 
@@ -23,6 +24,7 @@ const Home = (props: Props) => {
       />
       <Introduction />
       <MyEducation/>
+      <SkillsHobbies/>
     </div>
   );
 };

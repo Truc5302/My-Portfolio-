@@ -97,7 +97,7 @@ const contact= document.getElementById("about-me-contact");
         </div>
       </div>
       <div id="about-me-contact" className="bg-[#FFF6F6] px-10 " >
-        <h2 className="text-center text-3xl font-bold pt-4 underline underline-[#b97979]">About me </h2>
+        <h2 className="text-center text-3xl font-bold pt-4 underline">About me </h2>
 
         <div className="p-10 grid-cols-2 grid gap-4 items-center">
           <div>
