@@ -4,14 +4,14 @@ import imgEdu from "../../assets/image_2.png"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceLaughWink, faStar } from '@fortawesome/free-regular-svg-icons'
-import { faGraduationCap, faSchool } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faSchool,  } from '@fortawesome/free-solid-svg-icons';
 
 type Props = {}
 
 const MyEducation = (props: Props) => {
   return (
     <div className='w-full px-10 py-10 '>
-        <h2 className="text-center text-3xl font-bold pt-4 underline">My Education</h2>
+        <h2 className="text-center text-3xl font-bold pt-4 underline"><FontAwesomeIcon icon={faGraduationCap} className='mr-2'/> My Education</h2>
         <div className='grid grid-cols-2 gap-4 mt-5'>
             <div className='flex items-center justify-center'>
                 <img src={imgEdu} alt="education" className='w-2/5' />

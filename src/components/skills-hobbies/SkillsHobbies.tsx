@@ -1,14 +1,16 @@
-import { faAngular, faCss3Alt, faFigma, faGithub, faHtml5, faJs, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
-import { faC } from '@fortawesome/free-solid-svg-icons'
+import { faAngular, faCss3Alt, faFigma, faGithub, faHtml5, faJs, faReact, faSass, } from '@fortawesome/free-brands-svg-icons'
+import { faC, faRightLong } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-
+import imgFPTSoftware from '../../assets/FPT_Software_logo.png'
+import { useNavigate } from "react-router-dom";
 type Props = {}
 
 const SkillsHobbies = (props: Props) => {
+    const navigate = useNavigate();
     return (
         <div className='grid grid-cols-3 gap-2 p-10'>
-            <div className='border-t-2 border-b-2 border-[#b97979] rounded-2xl p-2'>
+            <div className='border-t-4 border-b-4 border-[#b97979] rounded-2xl p-2'>
                 <h2 className='text-center underline text-3xl'>Skills</h2>
                 <div className='border-[1px] p-2 border-[#000] rounded-2xl font-mono mb-1'>
                     <p>Languages: </p>
@@ -74,10 +76,29 @@ const SkillsHobbies = (props: Props) => {
 
 
             </div>
-            <div className='bg-[#fdf8f8] rounded-2xl'>
+            <div className='bg-[#fdf8f8] rounded-2xl p-2'>
                 <h2 className='text-center underline text-3xl'>Experience</h2>
+                <div className="relative border border-gray-300 p-4 rounded-2xl font-mono mb-4 shadow-sm bg-white mt-5">
+                    <h3 className='absolute -rotate-3 -top-3 -left-1 font-bold p-1 bg-[#000] text-[#fff] rounded-lg'>Work Experience</h3>
+                    <h3 className="text-lg font-semibold mb-2 mt-2 text-gray-800 flex"><img src={imgFPTSoftware} alt="fptsoftware" className='w-16 mr-1' /> FPT Software</h3>
+                    <ul className="space-y-1 text-sm text-gray-700">
+                        <li><strong>📅 Duration:</strong> 6 months</li>
+                        <li><strong>🕒 Time:</strong> 9/2023 – 03/2024</li>
+                        <li><strong>💼 Position:</strong>Front-end Developer Intern</li>
+                        <li><strong>👩‍💻 Technology:</strong> <FontAwesomeIcon icon={faAngular} className='text-red-400 mr-2' />Angular2</li>
+                    </ul>
+                </div>
+
+                <div onClick={() => navigate("/projects")}
+                    className="relative border border-gray-300 p-4 rounded-2xl font-mono mb-4 shadow-sm bg-white mt-5 hover:cursor-pointer ">
+                    <h3 className='absolute -rotate-3 -top-3 -left-1 font-bold p-1 bg-[#000] text-[#fff] rounded-lg'>Projects</h3>
+                    <div><h3 className='mt-2'> View Projects</h3>
+                        <FontAwesomeIcon icon={faRightLong} /></div>
+
+                </div>
+
             </div>
-            <div className='border-t-2 border-b-2 border-[#b97979] rounded-2xl p-2'>
+            <div className='border-t-4 border-b-4 border-[#b97979] rounded-2xl p-2'>
                 <h2 className='text-center underline text-3xl'>Hobbies</h2>
 
             </div>
