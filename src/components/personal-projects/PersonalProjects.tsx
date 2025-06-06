@@ -21,6 +21,15 @@ import p5 from '../../assets/personal-projects/portfolio/p5.jpg';
 
 type Props = {}
 
+interface Project {
+  title: string;
+  tech: string;
+  git: string;
+  web: string;
+  detail: string; // HTML string
+  detailImages?: string[];
+}
+
 const projects = [
   {
     title: 'My Portfolio (Personal project - 2025)',
@@ -53,17 +62,21 @@ on Vercel.</p>
 
 const PersonalProjects = (props: Props) => {
   const [open, setOpen] = React.useState(false);
+  const [selectedProject, setSelectedProject] = React.useState<Project>({} as Project);
 
-  const handleClickOpen = () => {
+  const handleClickOpen = (project: Project) => {
+    setSelectedProject(project);
     setOpen(true);
   };
 
   const handleClose = () => {
     setOpen(false);
+    setSelectedProject({} as Project);
   };
 
+
   return (
-    <div className="p-6 rounded-md bg-gray-50 my-10 shadow-md ">
+    <div className="p-6 rounded-md bg-green-50 my-10 shadow-md flex flex-col items-center">
       <h2 className="text-2xl font-bold text-green-700 mb-6">Personal Projects</h2>
 
       {projects.map((project) => (
@@ -81,7 +94,7 @@ const PersonalProjects = (props: Props) => {
           </div>
           <div>
             <button
-              onClick={handleClickOpen}
+              onClick={() => handleClickOpen(project)}
               className="cursor-pointer relative bg-white/10 py-2 rounded-full min-w-[8.5rem] min-h-[2.92rem] group max-w-full flex items-center justify-start hover:bg-[#b97979] transition-all duration-[0.8s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] shadow-[inset_1px_2px_5px_#00000080]"
 
             >
@@ -117,49 +130,53 @@ const PersonalProjects = (props: Props) => {
               </div>
             </button>
 
-            <React.Fragment>
-              <Dialog
-                fullScreen
-                open={open}
-                onClose={handleClose}
 
-              >
-                <AppBar sx={{ position: 'relative', backgroundColor: "#b97979" }}>
-                  <Toolbar>
-                    <IconButton
-                      edge="start"
-                      color="inherit"
-                      onClick={handleClose}
-                      aria-label="close"
-                    >
-                      <CloseIcon />
-                    </IconButton>
-                    <Typography sx={{ ml: 2, flex: 1, backgroundColor: "#b97979" }} variant="h6" component="div">
-                      Details
-                    </Typography>
-
-                  </Toolbar>
-                </AppBar>
-                <DialogContent>
-                  <div dangerouslySetInnerHTML={{ __html: project.detail }} />
-                  <div className="flex flex-wrap gap-4 mt-4 grid grid-cols-2 justify-center">
-                    {project.detailImages && project.detailImages.map((img, idx) => (
-                      <img
-                        key={idx}
-                        src={img}
-                        alt={`detail-${idx}`}
-                        className="max-h-60 rounded-lg border shadow w-fit mr-auto ml-auto"
-                      />
-                    ))}
-                  </div>
-                </DialogContent>
-
-              </Dialog>
-            </React.Fragment>
 
           </div>
         </div>
       ))}
+
+      {selectedProject && (
+        <React.Fragment>
+          <Dialog
+            fullScreen
+            open={open}
+            onClose={handleClose}
+
+          >
+            <AppBar sx={{ position: 'relative', backgroundColor: "#b97979" }}>
+              <Toolbar>
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  onClick={handleClose}
+                  aria-label="close"
+                >
+                  <CloseIcon />
+                </IconButton>
+                <Typography sx={{ ml: 2, flex: 1, backgroundColor: "#b97979" }} variant="h6" component="div">
+                  {selectedProject.title}
+                </Typography>
+
+              </Toolbar>
+            </AppBar>
+            <DialogContent>
+              <div dangerouslySetInnerHTML={{ __html: selectedProject.detail }} />
+              <div className="flex flex-wrap gap-4 mt-4 grid grid-cols-2 justify-center">
+                {selectedProject.detailImages && selectedProject.detailImages.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img}
+                    alt={`detail-${idx}`}
+                    className="max-h-60 rounded-lg border shadow w-fit mr-auto ml-auto"
+                  />
+                ))}
+              </div>
+            </DialogContent>
+
+          </Dialog>
+        </React.Fragment>
+      )}
 
 
     </div>

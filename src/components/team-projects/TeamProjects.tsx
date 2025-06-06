@@ -180,7 +180,7 @@ const TeamProjects = (props: Props) => {
     };
 
     return (
-        <div className="p-6 rounded-md bg-gray-50 my-10 shadow-md ">
+        <div className="p-6 rounded-md bg-red-50 my-10 shadow-md flex flex-col items-center">
             <h2 className="text-2xl font-bold text-red-700 mb-6">Team Projects</h2>
 
             {projects.map((project) => (
@@ -258,8 +258,8 @@ const TeamProjects = (props: Props) => {
                                 >
                                     <CloseIcon />
                                 </IconButton>
-                                <Typography sx={{ ml: 2, flex: 1, backgroundColor: "#b97979" }} variant="h6" component="div">
-                                    Details
+                                <Typography sx={{ ml: 2, flex: 1, backgroundColor: "#b97979", }} variant="h6" component="div">
+                                    {selectedProject.title}
                                 </Typography>
 
                             </Toolbar>
