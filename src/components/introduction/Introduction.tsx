@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
+  faGithub,
   faLinkedin,
   faSquareInstagram,
   faSquareThreads,
@@ -40,6 +41,18 @@ const Introduction = (props: Props) => {
 
   const socialsMed = [
     {
+      route: "https://www.linkedin.com/in/truongthuytruc/",
+      textColor: "text-blue-700",
+      icon: faLinkedin,
+      tooltip: "Linkedin",
+    },
+    {
+      route: "https://github.com/Truc5302?tab=repositories",
+      textColor: "",
+      icon: faGithub,
+      tooltip: "Git",
+    },
+    {
       route: "https://www.facebook.com/truong.thuy.truc.2024",
       textColor: "text-blue-600",
       icon: faFacebook,
@@ -51,12 +64,7 @@ const Introduction = (props: Props) => {
       icon: faSquareInstagram,
       tooltip: "Instagram",
     },
-    {
-      route: "https://www.linkedin.com/in/truongthuytruc/",
-      textColor: "text-blue-700",
-      icon: faLinkedin,
-      tooltip: "Linkedin",
-    },
+
     {
       route: "https://www.threads.com/@trucie_5302",
       textColor: "",
