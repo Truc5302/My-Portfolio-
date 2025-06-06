@@ -145,7 +145,7 @@ const Activities = (props: Props) => {
               <div className=" grid grid-cols-2 gap-5">
                 {selectAct.detailImg && selectAct.detailImg.map((img) => (
                   <div className="flex items-center justify-center">
-                    <img src={img} alt={selectAct.title} className="max-h-[300px]" />
+                    <img src={img ? img : altImg} alt={selectAct.title} className="max-h-[300px]" />
                   </div>
                 ))}
               </div>
