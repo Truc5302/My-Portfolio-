@@ -89,10 +89,11 @@ streamlines the scoring process and improves transparency in project assessment.
         detail: `
       <div class='font-mono'>
       <p class='text-red-600 list-none'>Technology Stack:</p>
-      <ul class="list-disc pl-5">
-        <li><strong>Framework & Languages:</strong> React, TypeScript.</li>
-        <li><strong>Libraries:</strong> Tailwind, MUI, AntDesign, Font Awesome.</li>
-      </ul>
+<ul class="list-disc pl-5">
+  <li><strong>Framework & Languages:</strong> React, TypeScript.</li>
+  <li><strong>Libraries:</strong> Tailwind, MUI, AntDesign, Font Awesome, React Router, React-Bootstrap, SCSS.</li>
+</ul>
+
       <p><strong>Role:</strong> Frontend Developer</p>
 
       <div>
