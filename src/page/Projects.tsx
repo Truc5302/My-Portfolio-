@@ -13,8 +13,8 @@ const Projects = (props: Props) => {
     <div className="pt-16 min-h-screen">
 
 
-      <span className=" px-20 flex items-center justify-center mt-5">
-        <span className={`mr-5 px-5 py-2  rounded-full border-4 ${showTeamProject ? " border-red-600 bg-red-50" : "border-gray-500"}`}>Team's project</span>
+      <span className=" md:px-20 flex items-center justify-center mt-5">
+        <span className={`mr-5 px-5 py-2  md:rounded-full rounded-2xl border-4 ${showTeamProject ? " border-red-600 bg-red-50" : "border-gray-500"}`}>Team's project</span>
         <span>
           <label className="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" value="" className="sr-only peer" checked={!showTeamProject} onClick={() => { setShowTeamProject(prev => !prev) }} />
@@ -23,7 +23,7 @@ const Projects = (props: Props) => {
             </div>
           </label>
         </span>
-        <span className={`ml-5 px-5 py-2  rounded-full border-4 ${!showTeamProject ? " border-green-600 bg-green-50" : "border-gray-500"}`}>Personal project</span>
+        <span className={`ml-5 px-5 py-2  md:rounded-full rounded-2xl border-4 ${!showTeamProject ? " border-green-600 bg-green-50" : "border-gray-500"}`}>Personal project</span>
       </span>
 
 

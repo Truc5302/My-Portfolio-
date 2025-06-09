@@ -76,11 +76,11 @@ const PersonalProjects = (props: Props) => {
 
 
   return (
-    <div className="p-6 rounded-md bg-green-50 my-10 shadow-md flex flex-col items-center">
+    <div className="md:p-6 p-2 rounded-md bg-green-50 my-10 shadow-md flex flex-col items-center">
       <h2 className="text-2xl font-bold text-green-700 mb-6">Personal Projects</h2>
 
       {projects.map((project) => (
-        <div className="w-2/3 mb-6 py-4 px-10 bg-white rounded-md shadow-sm border-l-10 border-[#b97979] flex justify-between items-center gap-4">
+        <div className="md:w-2/3 mb-6 py-4 md:px-10 px-5 bg-white rounded-md shadow-sm border-l-10 border-[#b97979] flex md:flex-row flex-col justify-between items-center gap-4">
           <div>
             <h3 className="text-lg font-semibold text-gray-800">
               <FontAwesomeIcon icon={faCloud} /> {project.title}
