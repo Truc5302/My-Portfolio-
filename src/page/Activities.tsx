@@ -103,9 +103,9 @@ const Activities = (props: Props) => {
       During my studies, I actively participated in various extracurricular activities,
       which enriched my overall experience, expanded my network, and helped me develop essential soft skills.
     </p>
-    <div className="py-10 px-20 grid grid-cols-2 gap-5 bg-gray-50">
+    <div className="py-10 md:px-20 px-5 grid md:grid-cols-2 grid-cols-1 gap-5 bg-gray-50">
       {activities.map((act) => (
-        <div className="w-100% flex flex-col items-center justify-center p-5 bg-[#fff rounded-lg shadow-md] border-2 border-[#b97979]">
+        <div className="w-100% flex flex-col items-center justify-center md:p-5 p-2 bg-[#fff rounded-lg shadow-md] border-2 border-[#b97979]">
           <img src={act.mainImg ? act.mainImg : altImg} alt={act.title} className="max-h-[300px]" />
           <h3 className="text-xl text-center font-bold py-2">{act.title}</h3>
           <p className="text-gray-700">{act.description}</p>
@@ -117,7 +117,7 @@ const Activities = (props: Props) => {
 
 
       {selectAct && (
-        <React.Fragment>
+        <React.Fragment key={selectAct.title}>
           <Dialog
             open={open}
             onClose={handleClose}
