@@ -50,6 +50,38 @@ interface Project {
 
 const projects = [
     {
+        title: 'TOUR REQUESTS AND IMPLEMENTATION SYSTEM (Graduation Thesis Defense (8/2024 – 12/2024))',
+        tech: ' React, TypeScript, Redux Toolkit',
+        git: 'github.com/Truc5302/footprints-tour-request-and-implementation-system.git',
+        web: '',
+        detail: `
+      <div class="font-mono">
+  <p class="text-red-600">Technology Stack:</p>
+  <ul class="list-disc pl-5">
+    <li><strong>Frontend:</strong> React, TypeScript, Redux Toolkit, Tailwind</li>
+    <li><strong>Backend:</strong> ASP.Net API, ASP.Net Identity, EF Core, JWT, Hangfire, SignalR, OAuth 2.0, Twilio, Redis, VietQR</li>
+    <li><strong>Database:</strong> SQL Server</li>
+    <li><strong>Mobile App:</strong> React Native</li>
+    <li><strong>Algorithm:</strong> Custom-built tour suggestion</li>
+    <li><strong>Cloud Services:</strong> VPS Server Hosting, Azure</li>
+    <li><strong>Project Management Tools:</strong> Lark Suite (Scheduling), GitHub (Tasks, Defects)</li>
+  </ul>
+
+  <p class="mt-4"><strong>Role:</strong> Frontend Developer</p>
+</div>
+
+      <p class='text-red-600'>Descriptions:</p>
+      <p>Developed a B2C Tour Management System in collaboration with the Tour Operations
+Department of Cong doan – Bao Nguoi Lao Dong. The system allows customers to submit personalized tour
+requests and receive tailored suggestions. Staff can customize and manage tour designs, while tour guides
+access itineraries, send SMS updates, and manage check-ins via a mobile app. The platform improves
+planning efficiency and enhances customer satisfaction.</p>
+      </div>
+      </div>
+    `,
+        detailImages: [d1, d2, d3],
+    },
+    {
         title: 'FPT Evaluation Project (Team Project - 2023)',
         tech: 'React.JS',
         git: 'github.com/Truc5302/SWP_evalution_fe.git',
@@ -132,38 +164,7 @@ enhances community engagement by facilitating guest access to modern sports faci
     `,
         detailImages: [b1, b2, b3, b4, b5, b6, b7],
     },
-    {
-        title: 'TOUR REQUESTS AND IMPLEMENTATION SYSTEM (Graduation Thesis Defense (8/2024 – 12/2024))',
-        tech: ' React, TypeScript, Redux Toolkit',
-        git: 'github.com/Truc5302/footprints-tour-request-and-implementation-system.git',
-        web: '',
-        detail: `
-      <div class="font-mono">
-  <p class="text-red-600">Technology Stack:</p>
-  <ul class="list-disc pl-5">
-    <li><strong>Frontend:</strong> React, TypeScript, Redux Toolkit, Tailwind</li>
-    <li><strong>Backend:</strong> ASP.Net API, ASP.Net Identity, EF Core, JWT, Hangfire, SignalR, OAuth 2.0, Twilio, Redis, VietQR</li>
-    <li><strong>Database:</strong> SQL Server</li>
-    <li><strong>Mobile App:</strong> React Native</li>
-    <li><strong>Algorithm:</strong> Custom-built tour suggestion</li>
-    <li><strong>Cloud Services:</strong> VPS Server Hosting, Azure</li>
-    <li><strong>Project Management Tools:</strong> Lark Suite (Scheduling), GitHub (Tasks, Defects)</li>
-  </ul>
 
-  <p class="mt-4"><strong>Role:</strong> Frontend Developer</p>
-</div>
-
-      <p class='text-red-600'>Descriptions:</p>
-      <p>Developed a B2C Tour Management System in collaboration with the Tour Operations
-Department of Công đoàn – Báo Người Lao Động. The system allows customers to submit personalized tour
-requests and receive tailored suggestions. Staff can customize and manage tour designs, while tour guides
-access itineraries, send SMS updates, and manage check-ins via a mobile app. The platform improves
-planning efficiency and enhances customer satisfaction.</p>
-      </div>
-      </div>
-    `,
-        detailImages: [d1, d2, d3],
-    }
 ];
 
 const TeamProjects = (props: Props) => {
