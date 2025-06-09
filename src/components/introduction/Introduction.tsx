@@ -85,7 +85,7 @@ const Introduction = (props: Props) => {
 
   return (
     <div className=" mt-6">
-      <div className="text-left mb-6 px-20 font-pacifico">
+      <div className="text-left mb-6 md:px-20 px-8 font-pacifico">
         <p>
           Welcome to my portfolio! Here, you will find a collection of my
           projects, skills, and experiences. I am passionate about web
@@ -96,10 +96,10 @@ const Introduction = (props: Props) => {
           or opportunities for collaboration.
         </p>
         <div className="flex gap-4 mt-4 justify-center">
-          <button onClick={() => { navigate("/projects") }} className="px-5 py-2 bg-[#b97979] rounded-lg text-[#fff] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+          <button onClick={() => { navigate("/projects") }} className="px-5 py-1 md:py-2 bg-[#b97979] rounded-lg text-[#fff] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
             View projects
           </button>
-          <button onClick={() => scrollToContact()} className="px-5 py-2 rounded-lg border-2 border-[#b97979] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+          <button onClick={() => scrollToContact()} className="px-5 py-1 md:py-2 rounded-lg border-2 border-[#b97979] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
             Contact me
           </button>
         </div>
@@ -107,7 +107,7 @@ const Introduction = (props: Props) => {
       <div id="about-me-contact" className="bg-[#FFF6F6] px-10 " >
         <h2 className="text-center text-3xl font-bold pt-4 underline">About me </h2>
 
-        <div className="p-10 grid-cols-2 grid gap-4 items-center">
+        <div className="md:p-10 py-10 md:grid-cols-2 grid gap-4 items-center">
           <div>
             {" "}
             <h2
@@ -123,6 +123,8 @@ const Introduction = (props: Props) => {
               have also developed several React.js projects during my university
               studies.
             </p>
+
+            {/* my infor */}
             <div className="mt-4">
               <strong className="text-2xl text-center ">My Personal informations:</strong>
               <ul className="list-disc ml-2 list-none">
@@ -164,11 +166,11 @@ const Introduction = (props: Props) => {
 
             </div>
           </div>
-          <div className="mb-10 flex items-center justify-center">
+          <div className="mb-10 flex items-center justify-center h-fit">
             <img
               src={imgIntro}
               alt="image personal"
-              className=" h-96 "
+              className=" md:h-96 h-48 "
             />
           </div>
         </div>

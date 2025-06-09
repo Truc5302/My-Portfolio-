@@ -9,7 +9,7 @@ type Props = {}
 const SkillsHobbies = (props: Props) => {
     const navigate = useNavigate();
     return (
-        <div className='grid grid-cols-3 gap-2 p-10'>
+        <div className='grid md:grid-cols-3 grid-cols-1 md:gap-2 gap-4 p-10'>
             <div className='border-t-4 border-b-4 border-[#b97979] rounded-2xl p-2'>
                 <h2 className='text-center underline text-3xl'>Skills</h2>
                 <div className='border-[1px] p-2 border-[#000] rounded-2xl font-mono mb-1'>

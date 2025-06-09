@@ -60,7 +60,7 @@ const Footer = (props: Props) => {
   ]
 
   return (
-    <div className='px-10 py-5 bg-[#b97979] flex justify-between'>
+    <div className='md:px-10 px-5 py-5 bg-[#b97979] flex justify-between'>
       <div>
         <h1
           className="text-3xl text-[#fff  ] h-[100%] tracking-tightest hover:cursor-pointer"
@@ -70,7 +70,7 @@ const Footer = (props: Props) => {
         </h1>
         <p className='text-white text-sm'>© 2025 TTT.</p>
       </div>
-      <div className="flex gap-4 mt-4">
+      <div className="flex md:gap-4 gap-2 mt-4">
         {socialsMed.map((item) => (
           <Tooltip key={item?.route} title={item.tooltip} arrow={mergedArrow}>
             <a
