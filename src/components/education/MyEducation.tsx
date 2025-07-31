@@ -19,7 +19,7 @@ const MyEducation = (props: Props) => {
                 <div>
                     <img src={imgEducation} alt="Education Image" className="mr-auto ml-auto w-52  mt-4" />
                     <h3 className="text-2xl font-bold mt-4"> <FontAwesomeIcon icon={faSchool} className='mr-2' />FPT University, Ho Chi Minh City, Viet Nam</h3>
-                    <span className='ml-10'>January 2022 - December 2024</span>
+                    <span className='ml-10'>January 2022 - March 2025</span>
 
                     <p><FontAwesomeIcon icon={faGraduationCap} className='mr-2' />Bachelor of Software Engineering</p>
                     <p><FontAwesomeIcon icon={faStar} className='mr-2' /> GPA: 3.0/4.0</p>

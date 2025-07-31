@@ -1,4 +1,4 @@
-import { faAngular, faCss3Alt, faFigma, faGithub, faHtml5, faJs, faReact, faSass, } from '@fortawesome/free-brands-svg-icons'
+import { faAngular, faCss3Alt, faFigma, faGithub, faHtml5, faJs, faPython, faReact, faSass, } from '@fortawesome/free-brands-svg-icons'
 import { faC, faRightLong } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
@@ -35,26 +35,39 @@ const SkillsHobbies = (props: Props) => {
                             <FontAwesomeIcon icon={faJs} className='text-yellow-400' />JavaScript
                         </span>
                         <span
-                            className='mt-1 p-1 border-[1px] border-[#ccc] rounded-lg'
+                            className='mr-2 mt-1 p-1 border-[1px] border-[#ccc] rounded-lg'
                         >
                             TypeScript
+                        </span>
+                        <span
+                            className='mr-2 mt-1 p-1 border-[1px] border-[#ccc] rounded-lg'
+                        >
+                            SQL
+                        </span>
+                        <span
+                            className='mt-1 p-1 border-[1px] border-[#ccc] rounded-lg'
+                        >
+                            <FontAwesomeIcon icon={faPython} className='text-blue-400' /> Python
                         </span>
                     </div>
                 </div>
                 <div className='border-[1px] p-2 border-[#000] rounded-2xl font-mono mb-1'>
                     <p>Libraries & Frameworks: </p>
                     <p className='flex flex-wrap'>
-                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'><FontAwesomeIcon icon={faReact} className='text-blue-400' />React</p>
-                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'><FontAwesomeIcon icon={faAngular} className='text-red-400' />Angular 2</p>
-                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>Tailwind CSS</p>
-                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>Redux Toolkit</p>
+                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg mr-1'><FontAwesomeIcon icon={faReact} className='text-blue-400' />React</p>
+                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg mr-1'><FontAwesomeIcon icon={faAngular} className='text-red-400' />Angular 2</p>
+                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg mr-1'>Tailwind CSS</p>
+                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg mr-1'>Redux Toolkit</p>
+                        <p className='p-1 border-[1px] border-[#ccc] rounded-lg mr-1'>Django</p>
                         <p className='p-1 border-[1px] border-[#ccc] rounded-lg  '><FontAwesomeIcon icon={faReact} className='text-blue-400' />React Native</p>
                     </p>
 
                 </div>
                 <div className='border-[1px] p-2 border-[#000] rounded-2xl font-mono mb-1'>
-                    <p>Tools: </p>
+                    <p>Database & Tools: </p>
                     <div className='flex flex-wrap'>
+                        <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>PostgreSQL</span>
+                        <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>PgAdmin</span>
                         <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'><FontAwesomeIcon icon={faGithub} />Git</span>
                         <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'><FontAwesomeIcon icon={faFigma} />Figma</span>
                         <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>Canva</span>
@@ -103,17 +116,16 @@ const SkillsHobbies = (props: Props) => {
                 <h2 className='text-center underline text-3xl'>Hobbies</h2>
                 <ul className="w-fit space-y-1 text-gray-700 py-5 px-10 text-lg border border-black rounded-xl mt-2 ">
                     <li>🏸 Badminton</li>
-                    <li>🏓 Tabble tennis</li>
-                    <li>🎹 Play Piano</li>
-                    <li>📖 Read Book</li>
-                    <li>🎞 Watch film</li>
+                    <li>🏓 Table tennis</li>
+                    <li>📖 Read Books</li>
+                    <li>🎞 Watch films</li>
                 </ul>
 
                 <div>
                     <h2 className='text-center underline text-3xl mt-2'>Languages</h2>
                     <div className='w-full space-y-1 text-gray-700 p-5 text-lg border border-black rounded-xl mt-2 '>
                         <p>Vietnamese: Native</p>
-                        <p>English: B1 level</p>
+                        <p>English: Intermediate</p>
                     </div>
                 </div>
 
