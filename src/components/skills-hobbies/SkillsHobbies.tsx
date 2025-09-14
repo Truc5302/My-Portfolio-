@@ -123,9 +123,9 @@ const SkillsHobbies = (props: Props) => {
 
                 <div>
                     <h2 className='text-center underline text-3xl mt-2'>Languages</h2>
-                    <div className='w-full space-y-1 text-gray-700 p-5 text-lg border border-black rounded-xl mt-2 '>
+                    <div className='w-full space-y-1 text-gray-700 p-5 text-lg border border-black rounded-xl mt-2 font-mono '>
                         <p>Vietnamese: Native</p>
-                        <p>English: Intermediate</p>
+                        <p>English: IELTS 6.0 (Intermediate)</p>
                     </div>
                 </div>
 
