@@ -8,6 +8,10 @@ type Props = {}
 
 const SkillsHobbies = (props: Props) => {
     const navigate = useNavigate();
+    const viewCert = () => {
+        window.open("https://drive.google.com/file/d/1pbB9Q_YWAiQy7AyJNHVMAD9uGNOp9s9i/view?usp=sharing", "_blank");
+    }
+
     return (
         <div className='grid md:grid-cols-3 grid-cols-1 md:gap-2 gap-4 p-10'>
             <div className='border-t-4 border-b-4 border-[#b97979] rounded-2xl p-2'>
@@ -44,11 +48,11 @@ const SkillsHobbies = (props: Props) => {
                         >
                             SQL
                         </span>
-                        <span
+                        {/* <span
                             className='mt-1 p-1 border-[1px] border-[#ccc] rounded-lg'
                         >
                             <FontAwesomeIcon icon={faPython} className='text-blue-400' /> Python
-                        </span>
+                        </span> */}
                     </div>
                 </div>
                 <div className='border-[1px] p-2 border-[#000] rounded-2xl font-mono mb-1'>
@@ -66,8 +70,9 @@ const SkillsHobbies = (props: Props) => {
                 <div className='border-[1px] p-2 border-[#000] rounded-2xl font-mono mb-1'>
                     <p>Database & Tools: </p>
                     <div className='flex flex-wrap'>
-                        <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>PostgreSQL</span>
-                        <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>PgAdmin</span>
+                        {/* <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>PostgreSQL</span>
+                        <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>PgAdmin</span> */}
+                        <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>MySQL</span>
                         <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'><FontAwesomeIcon icon={faGithub} />Git</span>
                         <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'><FontAwesomeIcon icon={faFigma} />Figma</span>
                         <span className='p-1 border-[1px] border-[#ccc] rounded-lg  mr-1'>Canva</span>
@@ -124,8 +129,15 @@ const SkillsHobbies = (props: Props) => {
                 <div>
                     <h2 className='text-center underline text-3xl mt-2'>Languages</h2>
                     <div className='w-full space-y-1 text-gray-700 p-5 text-lg border border-black rounded-xl mt-2 font-mono '>
-                        <p>Vietnamese: Native</p>
-                        <p>English: IELTS 6.0 (Intermediate)</p>
+                        <p>Vietnamese: <span className='font-bold'>Native</span></p>
+                        <span>
+                            <p>English: <span className='font-bold'>IELTS 6.0 (Intermediate)</span></p>
+                            <button
+                                onClick={() => viewCert()}
+                                className='px-1 border-2 border-[#b97979] rounded-sm font-mono font-bold text-[#FFF] bg-[#b97979] cursor-pointer hover:bg-pink-50 hover:text-[#000]'>
+                                My TRF
+                            </button>
+                        </span>
                     </div>
                 </div>
 
